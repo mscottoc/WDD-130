@@ -72,14 +72,23 @@ a:link{
     font-family: var(--heading-font);
 }
 .icon {
-    max-width: 100px;
+    max-width: 60px;
 }
 .msg {
     margin: 0 auto;
     text-align: center;
 }
+.card {
+    max-width: 30%;
+    margin: auto;
+}
 
 #logo_img {
 max-width: 200px;
+}
+
+#fire_icon {
+    max-width: 60px;
+
 }
 
