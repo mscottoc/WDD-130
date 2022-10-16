@@ -26,10 +26,14 @@ main section {
   background-color: var(--paragraph-background-color);
   color: var(--paragraph-color-on-color);
 }
+main section img {
+  box-sizing: border-box;
+}
 body {
   background-color: var(--primary-color);
   max-width: 1600px;
   margin: 0 auto;
+  padding: 0;
 }
 img {
   max-width: 100%;
@@ -44,6 +48,9 @@ h6 {
   color: var(--headline-color-on-white);
   text-align: center;
 }
+h2 {
+  margin: 0;
+}
 header {
   padding: 1em;
   text-align: center;
@@ -52,6 +59,8 @@ header {
 footer {
     background-color: var(--accent1-color);
     color: var(--paragraph-color-on-color);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a{
     color: white;
@@ -59,6 +68,9 @@ footer a{
 }
 footer a:hover{
     color: var(--accent2-color);
+}
+footer .social img{
+  padding-top: 15px;
 }
 p {
   font-family: var(--paragraph-font);
@@ -72,6 +84,7 @@ nav a {
   text-align: center;
   color: var(--accent1-color);
   text-decoration: underline;
+  padding: 35px;
 }
 nav a:link,
 a:visited {
@@ -83,6 +96,9 @@ nav a:hover{
 }
 .home-title {
     color: var(--headline-color-on-white);
+    font-size: 2em;
+    margin-top: 10px;
+    
 }
 .button-box {
   max-width: 10em;
@@ -93,6 +109,10 @@ nav a:hover{
     background-color: var(--accent1-color);
     color: var(--paragraph-color-on-color);
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 20px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: white;
@@ -104,21 +124,28 @@ a:link {
 }
 .icon {
   max-width: 80px;
+  padding: 10px;
 }
 .msg {
   margin: 0 auto;
   text-align: center;
   background-color: var(--paragraph-background-color);
+  line-height: 1.5em;
+  padding: 35px;
 }
 .msg h2{
     color: var(--headline-color-on-white);
 }
 .msg p{
     color: var(--paragraph-color-on-color);
+    padding-bottom: 15px;
 }
 .card {
   max-width: 30%;
-  margin: 0 auto;
+  margin: 200px auto;
+}
+.card-img {
+  border: 10px solid var(--accent1-color);
 }
 .social img{
     max-width: 50px;
@@ -142,6 +169,10 @@ a:link {
 
 #logo_img {
   max-width: 80px;
+}
+
+#logo_link {
+  padding-top: 5px;
 }
 
 #fire_icon {
