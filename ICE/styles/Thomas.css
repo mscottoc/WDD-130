@@ -9,6 +9,9 @@ image {
 }
 
 .icon {
+    margin: 0 auto;
+}
+.icon img{
     width: 150px;
     border-radius: 50%;
     border: 10px solid #444444;
@@ -19,6 +22,7 @@ image {
 }
 
 #icon-group {
-    max-width: 668px;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: auto;
 }

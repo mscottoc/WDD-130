@@ -1,0 +1,12 @@
+section {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+section article{
+    margin: 10px auto;
+    min-width: 5em;
+}
