@@ -90,13 +90,15 @@ nav {
   background-color: var(--nav-background-color);
   font-size: 1.2em;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  max-height: 104px;
 }
 nav a {
   text-align: center;
   color: var(--accent1-color);
   text-decoration: underline;
   padding: 35px;
+  max-width: fit-content;
 }
 nav a:link, a:visited {
   color: var(--accent1-color);
