@@ -92,6 +92,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   max-height: 104px;
+  border-radius: 10px;
 }
 nav a {
   text-align: center;
@@ -165,6 +166,8 @@ a:link {
     padding-bottom: 15px;
 }
 .mountains {
+  margin-top: auto;
+  margin-bottom: auto;
   grid-column: 2/7;
   grid-row: 5/8;
 }
