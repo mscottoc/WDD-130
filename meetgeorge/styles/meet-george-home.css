@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@300&display=swap');
+
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #f2f7f7;
   --secondary-color: #ddc8c4;
   --accent1-color: #896a67;
   --accent2-color: #6b4d57;
-  /*other pallet to test https://coolors.co/eff9f0-ddc8c4-896a67-6b4d57 https://coolors.co/d2bc74-5e5d5c-453643-28112b*/
+  /*other pallet to test https://coolors.co/eff9f0-ddc8c4-896a67-6b4d57 https://coolors.co/d2bc74-5e5d5c-453643-28112b */
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Raleway", sans-serif;
@@ -22,26 +24,18 @@
   --nav-hover-background-color: #eff9f0;
 }
 
-main section {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
-main section img {
-  box-sizing: border-box;
-}
 nav {
   background-color: var(--nav-background-color);
   font-size: 1.2em;
   display: flex;
   justify-content: space-evenly;
-  max-height: 104px;
-  border-radius: 10px;
+  border-radius: 2.5px;
 }
 nav a {
   text-align: center;
   color: var(--accent1-color);
   text-decoration: underline;
-  padding: 35px;
+  padding: 40px;
   max-width: fit-content;
 }
 nav a:link,
@@ -53,16 +47,9 @@ nav a:hover {
   color: var(--nav-hover-link-color);
 }
 
-main section {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
-main section img {
-  box-sizing: border-box;
-}
 body {
-  background-color: var(--secondary-color);
-  max-width: 1400px;
+  background-color: var(--primary-color);
+  max-width: 1000px;
   margin: 0 auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -70,6 +57,7 @@ body {
 
 img {
   max-width: 100%;
+  border-radius: 2.5px;
 }
 h1,
 h2,
@@ -97,7 +85,6 @@ footer {
   background-color: var(--accent1-color);
   color: var(--paragraph-color-on-color);
   padding: 25px 50px;
-  margin-top: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -114,6 +101,7 @@ footer .social img {
 }
 p {
   font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
 }
 
 .icon {
@@ -147,3 +135,121 @@ footer .social img{
       padding-bottom: 15px;
   }
   
+  #hero-box {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  #hero-box img {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    max-width: 97.5%;
+    margin: 0 auto;
+  }
+  
+  #hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: 1;
+    background-color: transparent;
+  }
+  
+  #hero-msg h1 {
+    text-align: center;
+    font-size: xx-large;
+  }
+  
+  #hero-msg h4 {
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 10px;
+    font-size: large;
+  }
+  
+  
+#logo_img {
+    max-width: 100px;
+  }
+  
+  #logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  #content-background {
+    background-color: var(--secondary-color);
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+  }
+  
+#see-box {
+    background-color:var(--accent2-color) ;
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr 1fr .5fr;
+}
+
+#see-box p {
+    background-color: var(--secondary-color);
+    padding: 1.5em;
+    grid-column: 3/5;
+    grid-row: 2/3;
+    z-index: 1;
+    text-align: center;
+    border-radius: 2.5px;
+}
+
+#see-box p a {
+    color: var(--paragraph-color);
+}
+
+
+#see-box p a:hover {
+    color: var(--paragraph-color-on-color);
+}
+
+#see-box img {
+    margin-top: 25%;
+    margin-bottom: 25%;
+    grid-column: 2/4;
+    grid-row: 1/4;
+    width: 100%;
+}
+
+#learn-box {
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr 1fr .5fr;
+}
+
+#learn-box p {
+    background-color: var(--accent2-color);
+    color: var(--paragraph-color-on-color);
+    padding: 1.5em;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    z-index: 1;
+    text-align: center;
+    border-radius: 2.5px;
+}
+
+#learn-box p a {
+    color: var(--paragraph-color-on-color);
+}
+
+#learn-box p a:hover {
+    color: var(--secondary-color);
+}
+
+#learn-box img {
+    margin-top: 25%;
+    margin-bottom: 25%;
+    grid-column: 3/5;
+    grid-row: 1/4;
+    width: 100%;
+}
+#intro {
+    margin: 5%;
+    text-align: center;
+}
