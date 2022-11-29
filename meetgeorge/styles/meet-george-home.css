@@ -99,7 +99,7 @@ footer a:hover {
 footer .social img {
   padding-top: 15px;
 }
-p {
+p, li {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
 }
@@ -167,15 +167,11 @@ footer .social img{
     font-size: large;
   }
   
-  
-#logo_img {
-    max-width: 100px;
-  }
-  
   #logo_link {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
+    max-width: 100px;
   }
   
   #content-background {
