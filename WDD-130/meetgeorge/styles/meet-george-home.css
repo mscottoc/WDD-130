@@ -79,7 +79,6 @@ header {
   display: grid;
   grid-template-columns: 150px auto;
   z-index: 1;
-  opacity: 90%;
 }
 footer {
   background-color: var(--accent1-color);
