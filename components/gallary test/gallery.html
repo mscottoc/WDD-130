@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/meetgeorge/styles/meet-george-home.css">
-    <link rel="stylesheet" href="/meetgeorge/styles/gallery.css">
+    <link rel="stylesheet" href="images/styles/gallery.css">
     <title>Gallery</title>
 </head>
 <body>
@@ -21,21 +21,38 @@
     </header>
 
     <main id="content-background">
-        <img src="images/george.png" alt="George">
+       <div class="container">
+        <img id="expandedImg">
+       </div> 
         <div id="choice-grid">
-            <div class="button-box"><a href="/meetgeorge/gallery.html">default</a></div>
-            <div class="button-box"><a href="/meetgeorge/gallery/wizard.html">wizard</a></div>
-            <div class="button-box"><a href="/meetgeorge/gallery/racer.html">racer</a></div>
-            <div class="button-box"><a href="/meetgeorge/gallery/astronaut.html">astronaut</a></div>
-            <div class="button-box"><a href="/meetgeorge/gallery/writer.html">writer</a></div>
-            <div class="button-box"><a href="/meetgeorge/gallery/artist.html">artist</a></div>
-            <div class="button-box"><a href="/meetgeorge/gallery/musician.html">musician</a></div>
-            <div class="button-box"><a href="/meetgeorge/gallery/knight.html">knight</a></div>
-            <div class="button-box"><a href="/meetgeorge/gallery/cowboy.html">cowboy</a></div>
-            <div class="button-box"><a href="/meetgeorge/gallery/pilot.html">pilot</a></div>
-            <div class="button-box"><a href="/meetgeorge/gallery/chef.html">chef</a></div>
-            <div class="button-box"><a href="/meetgeorge/gallery/rock-star.html">rock star</a></div>
+            <div class="button-box"><a>default</a></div>
+            <div class="button-box"><a onclick="myFunction('components\gallary test\images\wizard.png');">wizard</a></div>
+            <div class="button-box"><a>racer</a></div>
+            <div class="button-box"><a>astronaut</a></div>
+            <div class="button-box"><a>writer</a></div>
+            <div class="button-box"><a>artist</a></div>
+            <div class="button-box"><a>musician</a></div>
+            <div class="button-box"><a>knight</a></div>
+            <div class="button-box"><a>cowboy</a></div>
+            <div class="button-box"><a>pilot</a></div>
+            <div class="button-box"><a>chef</a></div>
+            <div class="button-box"><a>rock star</a></div>
         </div>
+
+        
+    <script>
+        function myFunction(imgs) {
+          // Get the expanded image
+          var expandImg = document.getElementById("expandedImg");
+          // Get the image text
+          expandImg.src = imgs.src;
+          // Use the value of the alt attribute of the clickable image as text inside the expanded image
+          // imgText.innerHTML = imgs.alt;
+          // Show the container element (hidden with CSS)
+          expandImg.parentElement.style.display = "block";
+        }
+        myFunction('images/george.png')
+      </script>
     </main>
 
     <footer>
