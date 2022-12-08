@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/WDD-130/meetgeorge/styles/meet-george-home.css">
-    <link rel="stylesheet" href="/WDD-130/meetgeorge/styles/gallery.css">
+    <link rel="stylesheet" href="styles/meet-george-home.css">
+    <link rel="stylesheet" href="styles/gallery.css">
     <title>Gallery</title>
 </head>
 <body>
     <header>
         <a id="logo_link" href="index.html">
-            <img src="images/george-logo.png" alt="George Logo">
+            <img src="images\george-logo.png" alt="George Logo">
         </a>
         <nav>
             <a href="index.html">Home</a>
@@ -21,34 +21,63 @@
     </header>
 
     <main id="content-background">
-        <img src="images/george.png" alt="George">
+       <div class="container">
+        <img id="expandedImg" onclick="myRemi(this)">
+       </div> 
         <div id="choice-grid">
-            <div class="button-box"><a href="/WDD-130/meetgeorge/gallery.html">default</a></div>
-            <div class="button-box"><a href="/WDD-130/meetgeorge/gallery/wizard.html">wizard</a></div>
-            <div class="button-box"><a href="/WDD-130/meetgeorge/gallery/racer.html">racer</a></div>
-            <div class="button-box"><a href="/WDD-130/meetgeorge/gallery/astronaut.html">astronaut</a></div>
-            <div class="button-box"><a href="/WDD-130/meetgeorge/gallery/writer.html">writer</a></div>
-            <div class="button-box"><a href="/WDD-130/meetgeorge/gallery/artist.html">artist</a></div>
-            <div class="button-box"><a href="/WDD-130/meetgeorge/gallery/musician.html">musician</a></div>
-            <div class="button-box"><a href="/WDD-130/meetgeorge/gallery/knight.html">knight</a></div>
-            <div class="button-box"><a href="/WDD-130/meetgeorge/gallery/cowboy.html">cowboy</a></div>
-            <div class="button-box"><a href="/WDD-130/meetgeorge/gallery/pilot.html">pilot</a></div>
-            <div class="button-box"><a href="/WDD-130/meetgeorge/gallery/chef.html">chef</a></div>
-            <div class="button-box"><a href="/WDD-130/meetgeorge/gallery/rock-star.html">rock star</a></div>
+            <div class="button-box"><a onclick="myFunction('images/george.png');">default</a></div>
+            <div class="button-box"><a onclick="myFunction('images/wizard.png');">wizard</a></div>
+            <div class="button-box"><a onclick="myFunction('images/racer.png');">racer</a></div>
+            <div class="button-box"><a onclick="myFunction('images/astronaut.png');">astronaut</a></div>
+            <div class="button-box"><a onclick="myFunction('images/writer.png');">writer</a></div>
+            <div class="button-box"><a onclick="myFunction('images/artist.png');">artist</a></div>
+            <div class="button-box"><a onclick="myFunction('images/musician.png');">musician</a></div>
+            <div class="button-box"><a onclick="myFunction('images/knight.png');">knight</a></div>
+            <div class="button-box"><a onclick="myFunction('images/cowboy.png');">cowboy</a></div>
+            <div class="button-box"><a onclick="myFunction('images/pilot.png');">pilot</a></div>
+            <div class="button-box"><a onclick="myFunction('images/chef.png');">chef</a></div>
+            <div class="button-box"><a onclick="myFunction('images/rock-star.png');">rock star</a></div>
         </div>
+
+        
+    <script>
+        function myFunction(imgs) {
+          // Get the expanded image
+          var expandImg = document.getElementById("expandedImg");
+          // Get the image text
+          expandImg.src = imgs;
+          // Use the value of the alt attribute of the clickable image as text inside the expanded image
+          // imgText.innerHTML = imgs.alt;
+          // Show the container element (hidden with CSS)
+          expandImg.parentElement.style.display = "block";
+        }
+
+        function myRemi(imgs) {
+          // Get the expanded image
+          var expandImg = document.getElementById("expandedImg");
+          console.log(expandImg.src);
+
+          if (expandImg.src == 'http://127.0.0.1:5500/meetgeorge/images/george.png'){
+            expandImg.src = 'images/remi.png';
+          }
+
+          expandImg.parentElement.style.display = "block";
+        }
+        myFunction('images/george.png')
+      </script>
     </main>
 
     <footer>
         <p>Meet George &copy; 2022 - Scott O'Connor</p>
         <div class="social">
           <a class="icon" target="_blank" href="sike.html">
-            <img src="/WDD-130/meetgeorge/images/facebook (2).png" alt="fb icon" />
+            <img src="/meetgeorge/images/facebook (2).png" alt="fb icon" />
           </a>
           <a class="icon" target="_blank" href="sike.html">
-            <img src="/WDD-130/meetgeorge/images/twitter.png" alt="twitter icon" />
+            <img src="/meetgeorge/images/twitter.png" alt="twitter icon" />
           </a>
           <a class="icon" target="_blank" href="sike.html">
-            <img src="/WDD-130/meetgeorge/images/insta.png" alt="instagram icon" />
+            <img src="/meetgeorge/images/insta.png" alt="instagram icon" />
           </a>
     </footer>
 </body>
