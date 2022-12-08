@@ -13,14 +13,18 @@
     margin: 10px;
     border-radius: 5px;
     cursor: pointer;
+    display: grid;
 }
 .button-box a {
     color: var(--paragraph-color-on-color);
     text-decoration: none;
     font-size: 18px;
     padding: 15px 20%;
-    margin-top: 50px;
+    margin-top: auto;
     border-radius: 5px;
+    z-index: 0;
+    grid-row: 1;
+    grid-column: 1;
 }
 main img {
     width: 97%;
@@ -31,3 +35,15 @@ main img {
     position: relative;
     display: none;
   }
+.invis {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    grid-row: 1;
+    grid-column: 1;
+    margin: -15px;
+}
+
+nav a {
+    
+}
