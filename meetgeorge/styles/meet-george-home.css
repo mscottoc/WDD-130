@@ -37,6 +37,7 @@ nav a {
   text-decoration: none;
   padding: 40px;
   max-width: fit-content;
+  font-family: var(--heading-font);
 }
 nav a:link,
 a:visited {
