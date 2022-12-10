@@ -24,7 +24,6 @@
   --nav-hover-background-color: #eff9f0;
 }
 
-
 .info-box-right {
     display: grid;
     grid-template-columns: 45% 1fr;

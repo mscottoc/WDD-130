@@ -5,20 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/meet-george-home.css">
+    <link rel="stylesheet" href="styles/sidenav.css">
     <link rel="stylesheet" href="styles/learn.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <a id="logo_link" href="index.html">
-            <img id="logo_img" src="images/george-logo.png" alt="George Logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="more-info.html">Learn More</a>
-            <a href="gallery.html">See More</a>
-        </nav>
-    </header>
+  <header>
+      <a id="logo_link" href="index.html">
+          <img id="logo_img" src="images/george-logo.png" alt="George Logo">
+      </a>
+      <nav>
+          <span onclick="openNav()">Menu</span>
+          <div id="top-nav">
+              <a href="index.html">Home</a>
+              <a href="more-info.html">Learn More</a>
+              <a href="gallery.html">See More</a>
+      </div>
+      </nav>
+  </header>
+
+  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="more-info.html">Learn More</a>
+      <a href="gallery.html">See More</a>
+    </div>
+  
+    <script>
+      /* Set the width of the side navigation to 250px */
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+    </script>
 
     <main id="content-background">
         

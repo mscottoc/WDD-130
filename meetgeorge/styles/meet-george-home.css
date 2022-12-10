@@ -24,29 +24,31 @@
   --nav-hover-background-color: #eff9f0;
 }
 
-nav {
+nav, nav div{
   background-color: var(--nav-background-color);
   font-size: 1.2em;
   display: flex;
   justify-content: space-evenly;
   border-radius: 2.5px;
 }
-nav a {
+nav a, nav span {
   text-align: center;
   color: var(--accent1-color);
   text-decoration: none;
   padding: 40px;
   max-width: fit-content;
   font-family: var(--heading-font);
+  border-radius: 2.5px;
 }
 nav a:link,
 a:visited {
   color: var(--accent1-color);
 }
-nav a:hover {
+nav a:hover, nav span:hover{
   background-color: var(--nav-hover-background-color);
   color: var(--nav-hover-link-color);
 }
+
 
 body {
   background-color: var(--primary-color);
@@ -249,3 +251,4 @@ footer .social img{
     margin: 5%;
     text-align: center;
 }
+
