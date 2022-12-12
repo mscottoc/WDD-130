@@ -91,12 +91,17 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-footer a {
-  color: white;
+footer a:link {
+  color: var(--accent2-color);
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: var(--accent2-color);
   text-decoration: underline;
 }
 footer a:hover {
-  color: var(--accent2-color);
+  color: white;
 }
 footer .social img {
   padding-top: 15px;
